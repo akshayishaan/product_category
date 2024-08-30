@@ -3,86 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BOGO Offer</title>
+    <title>BOGO Offers</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
       <h1>YAY! It's BOGO</h1>
-
-      <div class="offer">
-        <div class="offer-header">
-          <div class="off-div custom-dotted-border">30% Off</div>
-          <input type="checkbox" id="offerCheckbox1" class="offer-checkbox" />
-          <div class="buy-price">
-            <div class="buy">Buy 1 Get 2</div>
-            <div class="price">$18.00 USD</div>
-          </div>
-          <div class="most-popular">Most Popular</div>
-        </div>
-        <div class="offer-body">
-          <div class="offer-header-open">
-            <input
-              type="checkbox"
-              id="offerCheckbox1"
-              class="offer-checkboxs offer-checkbox"
-            />
-            <div class="buy-price">
-              <div class="buy">Buy 1 Get 2</div>
-              <div class="price">$18.00 USD</div>
-            </div>
-            <div class="buy-price">
-              <div class="per-off">10% off</div>
-              <del class="strike-price">$10.00 USD</del>
-            </div>
-          </div>
-          <div class="dimensions">
-            <div class="size-1-lable">
-              <span>#1</span>
-              <p>Size</p>
-              <p>Color</p>
-            </div>
-            <div class="size-1-container">
-              <span>#1</span>
-              <select id="size1">
-                <option value="S">S</option>
-                <option value="M">M</option>
-                <option value="L">L</option>
-              </select>
-              <select id="color1">
-                <option value="Black">Black</option>
-                <option value="White">White</option>
-                <option value="Red">Red</option>
-              </select>
-            </div>
-            <div class="size-1-container">
-              <span>#2</span>
-              <select id="size1">
-                <option value="S">S</option>
-                <option value="M">M</option>
-                <option value="L">L</option>
-              </select>
-              <select id="color1">
-                <option value="Black">Black</option>
-                <option value="White">White</option>
-                <option value="Red">Red</option>
-              </select>
-            </div>
-          </div>
-        </div>
+      <div id="offersContainer" class="offers-container">
+        <!-- Offers will be injected here -->
       </div>
-
       <div class="pricing">
         <span>Free Delivery</span>
-        <p>Total: $18.00 USD</p>
+        <p id="totalPrice">Total: $0.00 USD</p>
       </div>
-
       <div class="add-to-cart-container">
-        <button class="add-to-cart">+ Add to Cart</button>
+        <button id="addToCart" class="add-to-cart">+ Add to Cart</button>
         <p>Powered by <span class="color-pink">Pumper</span></p>
       </div>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
